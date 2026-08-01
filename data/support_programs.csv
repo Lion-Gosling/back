@@ -1,0 +1,7 @@
+﻿name,age_min,age_max,income_ratio_min,income_ratio_max,asset_max,deposit_max,rent_max,benefit_desc,source_url,income_max_annual,is_kb_exclusive,is_kb_available
+청년월세 특별지원(국토부),19,34,0,60,122000000,,,"월 최대 20만원, 최대 24개월(총 480만원)",https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004661,,False,False
+청년전용 버팀목전세자금대출,19,34,,,,300000000,,"보증금의 최대 80%, 최대 1.5~2억원, 금리 연 1.3~4.3%",https://www.myhome.go.kr/hws/portal/cont/selectYouthPolicyYouthOnlyCrutchLoanView.do,50000000,False,False
+서울시 청년월세지원,19,39,48,150,130000000,80000000,600000,"월 20만원, 최대 12개월(총 240만원, 생애 1회)",https://soco.seoul.go.kr/youth/main/contents.do?menuNo=400025,,False,False
+서울시 청년 임차보증금 이자지원,19,39,,,,300000000,900000,"보증금 대출 이자 최대 연 2.0%p 지원(본인부담 최저 1.0%), 한도 2억원(보증금의 90% 이내)",https://soco.seoul.go.kr/youth/main/contents.do?menuNo=400024,50000000,False,False
+KB 청년 맞춤형 전세자금대출,19,34,,,,,,"HF(한국주택금융공사) 보증 연계, 대출금리·보증료 우대 (KB국민은행 자체 상품)",https://obank.kbstar.com/quics?page=C060283&cc=b028364%3Ab061618&브랜드상품코드=LN20000156&QSL=F,70000000,True,True
+청년미래적금,19,34,,200,,,,"월 최대 50만원 저축 시 정부기여금 6~12%, 최대 2,200만원 목돈 형성 (KB스타뱅킹 가입 가능)",https://kbthink.com/investment/issues/youth-future-savings.html,60000000,False,True

@@ -227,3 +227,7 @@ logs/
 
 # Raw seed data (do not commit originals)
 data/*.csv
+
+!data/region_price_stat.csv
+!data/age_income_benchmark.csv
+!data/support_programs.csv
