@@ -224,3 +224,6 @@ logs/
 # SQLite generic
 *.sqlite3
 *.sqlite3-journal
+
+# Raw seed data (do not commit originals)
+data/*.csv

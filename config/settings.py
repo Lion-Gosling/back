@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -37,6 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'corsheaders',
+    'profiles',
+    'benchmarks',
+    'simulation',
+    'support',
 ]
 
 MIDDLEWARE = [
@@ -120,3 +127,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+SAVINGS_INTEREST_RATE_ANNUAL = 0.02
+AI_SERVER_URL = os.environ.get('AI_SERVER_URL', 'http://localhost:8000')
+
+AI_SERVER_CONNECT_TIMEOUT = 5
+AI_SERVER_READ_TIMEOUT = 180    
