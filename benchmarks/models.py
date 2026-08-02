@@ -27,3 +27,4 @@ class AgeIncomeBenchmark(models.Model):
     target_asset_default = models.PositiveIntegerField()
     target_months_default = models.PositiveSmallIntegerField()
     living_cost_default = models.PositiveIntegerField()
+    monthly_income_default = models.PositiveIntegerField(default=0)
