@@ -63,6 +63,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "https://front-lilac-zeta.vercel.app",
+    "https://mellifluous-pixie-49f291.netlify.app"
 ]
 
 ROOT_URLCONF = 'config.urls'
