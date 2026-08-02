@@ -13,6 +13,7 @@ from .serializers import (
     ScenarioSerializer,
     TimingComparisonSerializer,
 )
+from .serializers import PYEONG_TO_M2
 from .services.ai_client import AIServiceError, analyze_events, run_analysis
 from .services.payload_builder import build_analysis_payload
 from .services.timing_comparison import build_timing_comparison
@@ -33,19 +34,20 @@ class ScenarioCreateView(APIView):
         )
 
         deposit, monthly_rent = slider_to_amounts(
-            stat.eq_rent,
-            stat.conversion_rate_annual,
-            data['contract_slider_pct'],
-            stat.min_deposit_floor,
+            stat.eq_rent, stat.conversion_rate_annual,
+            data['contract_slider_pct'], stat.min_deposit_floor,
         )
 
         loan_amount = calc_dsr_limit(profile, deposit) if data['wants_loan'] else 0
+        contract_type = 'jeonse' if data['contract_slider_pct'] == 0 else 'monthly_rent' 
 
         scenario = Scenario.objects.create(
             profile=profile,
             district=data['district'],
             housing_type=data['housing_type'],
             contract_slider_pct=data['contract_slider_pct'],
+            desired_area_m2=round(data['desired_area_pyeong'] * PYEONG_TO_M2, 1),  
+            contract_type=contract_type, 
             deposit=deposit,
             monthly_rent=monthly_rent,
             moving_cost=stat.moving_cost_avg,
