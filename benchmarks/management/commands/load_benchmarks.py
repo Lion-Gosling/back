@@ -50,6 +50,7 @@ class Command(BaseCommand):
                 target_asset_default=int(row['target_asset_default']),
                 target_months_default=int(row['target_months_default']),
                 living_cost_default=int(row['living_cost_default']),
+                monthly_income_default=int(row['monthly_income_default'])
             )
             for row in rows
         ]
