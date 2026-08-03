@@ -7,5 +7,4 @@ def slider_to_amounts(eq_rent, rate, slider_pct, min_deposit_floor):
 
 
 def calc_dsr_limit(profile, deposit):
-    # TODO: 실제 DSR 40% 기준 계산으로 교체 필요. 지금은 임시로 deposit의 60%.
     return round(deposit * 0.6)
