@@ -8,6 +8,8 @@
 
 **2026 제8회 KB AI Challenge** · Team 라이언고슬링 (김가영 · 신지민 · 황규리)
 
+### 배포 링크 : https://mellifluous-pixie-49f291.netlify.app/
+
 </div>
 
 ---
